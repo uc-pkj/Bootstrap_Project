@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/bootstrap4.min.css?20220238"
         type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/CSS/style.css">
 
     <!-- add javascript for profie name  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -63,8 +62,7 @@
             <!-- first dropdown  -->
             <div class="col-md-2">
                 <div class="dropdown">
-                    <div class="btn btn-light border border-2  d-flex justify-content-between align-items-center "
-                        type="button" id="dropdownMenuButton1">
+                    <div class="btn btn-light border border-2  d-flex justify-content-between align-items-center">
                         <span>uCertify</span>
                         <span class="icomoon-close-2 dropdown-toggle"></span>
                     </div>
@@ -74,7 +72,7 @@
             <!-- second box  -->
             <div class="col-md-5">
                 <div class="btn-group">
-                    <div class="bgcolor btn btn-light border border-2 blue_border">
+                    <div class="bg-secondary text-light btn btn-light border border-2 blue_border">
                         <span class=" s3 icomoon-roster-sm position-relative top3"></span>
                         <span class="d-none d-md-inline-block ">Roster</span>
                     </div>
@@ -98,21 +96,16 @@
 
                 <div class="row d-flex justify-content-end">
                     <div class="col-4 p-0">
-                        <button type="button" class="btn btn-outline-primary lmsheight ">LMS Configuration</button>
+                        <button type="button" class="btn btn-outline-primary  " style="height: 40px;">LMS
+                            Configuration</button>
                     </div>
 
                     <div class="col-3 p-0 m-0">
                         <div class="dropdown ">
-                            <button
-                                class="btn btn-light border border-2 dropdown-toggle  icomoon-file-download lmsheight"
-                                type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-light border border-2 dropdown-toggle icomoon-file-download"
+                                type="button" style="height: 40px;">
                                 Export
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -123,14 +116,14 @@
         <!-- third row -->
         <div class="row ml">
 
-            <div
-                class="col-md-1 border border-secondary rounded btn-light searchwid justify-content-center align-items-center d-flex bgcolor">
+            <div class="col-md-1 border border-secondary rounded btn-light justify-content-center align-items-center d-flex bg-secondary text-light"
+                style="width: 50px; height: 44px;">
                 <span class="icomoon-search-3"></span>
             </div>
 
             <div class="col-md-8 mb-3">
                 <div class="btn-group ">
-                    <div class="bgcolor btn btn-light border border-2 blue_border ">
+                    <div class="bg-secondary text-light btn btn-light border border-2 blue_border ">
                         <span class="align-middle s3 icomoon-roster-sm position-relative top3"></span>
                         <span class="d-none d-md-inline-block align-middle">Roster</span>
                     </div>
@@ -185,19 +178,19 @@
 
                         <th scope="col">
                             <p class="m-0">Student Name</p>
-                            <span class="m-0 app2">Tag/Status</span>
+                            <small class="m-0 ">Tag/Status</small>
                             <span class="m-0 icomoon-arrow-up-2"></span>
 
                         </th>
                         <th scope="col">
                             <p class="m-0">Course Name</p>
-                            <span class="m-0 app2">CRN/Course Status</span>
+                            <small class="m-0">CRN/Course Status</small>
                             <span class="m-0 icomoon-arrow-up-2"></span>
 
                         </th>
                         <th scope="col">
                             <p class="m-0">Instructor</p>
-                            <span class="m-0 app2">Section</span>
+                            <small class="m-0">Section</small>
                             <span class="m-0 icomoon-arrow-up-2"></span>
                         </th>
                         <th scope="col">
@@ -206,22 +199,22 @@
                         </th>
                         <th scope="col">
                             <p class="m-0">Start</p>
-                            <p class="m-0 app2">Time Passed</p>
+                            <small class="m-0">Time Passed</small>
                             <p class="m-0 icomoon-arrow-up-2"></p>
                         </th>
                         <th scope="col">
                             <p class="m-0">Target</p>
-                            <p class="m-0 app2">Time Needed</p>
+                            <small class="m-0">Time Needed</small>
                             <p class="m-0 icomoon-arrow-up-2"></p>
                         </th>
                         <th scope="col">
                             <p class="m-0">Estimated</p>
-                            <span class="m-0 app2 ">Time Required</span>
+                            <small class="m-0">Time Required</small>
                             <em class="bi-chevron-down"></em>
                         </th>
                         <th scope="col">
                             <p class="m-0">Last Login</p>
-                            <p class="app2 m-0">Time Passed</p>
+                            <small class=" m-0">Time Passed</small>
                             <p class="icomoon-arrow-up-2 m-0"></p>
                         </th>
                         <th scope="col">Actions</th>
@@ -246,18 +239,17 @@
 
                         <td class="border-bottom">
                             <p class="m-0">APP-Training</p>
-                            <p class="app2 m-0">app-training</p>
+                            <small class=" m-0">app-training</small><br>
                             <span class="icomoon-lesson-sm text-success"></span>
                             <span class=" icomoon-testprep-sm text-success"></span>
                         </td>
                         <td>
                             <p class="m-0">Dhiroo Verma</p>
-                            <span class="app2 bg-primary p text-light">new</span>
+                            <small class="bg-primary p text-light">new</small>
                         </td>
                         <td class="align-middle text-center">
                             <div data-peity="{&quot;fill&quot;: [&quot;green&quot;, &quot;#ddd&quot;], &quot;radius&quot;: 10}"
-                                class="pie d-none">96/100</div><svg class="peity" height="20"
-                                width="20">
+                                class="pie d-none">96/100</div><svg class="peity" height="20" width="20">
                                 <path d="M 10 0 A 10 10 0 1 1 7.5131011283514475 0.314168388713691 L 10 10"
                                     fill="green"></path>
                                 <path
@@ -268,19 +260,19 @@
                         </td>
                         <td>
                             <p class="m-0">24-APR-19</p>
-                            <p class="app2">2.1 years</p>
+                            <small class="">2.1 years</small>
                         </td>
                         <td>
                             <p class="m-0">25-JUN-19</p>
-                            <p class="app2">NA</p>
+                            <small class="">NA</small>
                         </td>
                         <td>
                             <p class="m-0">12-JAN-23</p>
-                            <p class="app2">1.6 years</p>
+                            <small class="">1.6 years</small>
                         </td>
                         <td>
                             <p class="m-0 text-danger">21-FEB-19</p>
-                            <p class="app2">2.3 years ago</p>
+                            <small class="">2.3 years ago</small>
                         </td>
                         <td>
                             <div class="dropdown">
@@ -302,7 +294,9 @@
                         </th>
 
                         <td class="pb-5 pt-5 flex flex-row">
-                            <span class="rounded-circle bg-success text-light d-flex justify-content-center align-items-center" id="profileImage"></span>
+                            <span
+                                class="rounded-circle bg-success text-light d-flex justify-content-center align-items-center"
+                                id="profileImage" style="width: 35px; height: 35px;"></span>
                             <span class="d-inline-block text-truncate p" style="max-width: 119px;">
                                 <span id="firstName">Abhishek</span>
                                 <span id="lastName">Pandit</span>
@@ -311,13 +305,13 @@
 
                         <td>
                             <p class="m-0">APP-Training</p>
-                            <p class="app2 m-0">app-training</p>
+                            <small class=" m-0">app-training</small>
                             <span class="icomoon-lesson-sm text-success"></span>
                             <span class=" icomoon-testprep-sm text-success"></span>
                         </td>
                         <td>
                             <p class="m-0">Swati Kesarwani</p>
-                            <span class="app2 bg-primary p text-light">Merged Shambhunath ap</span>
+                            <small class=" bg-primary p text-light">Merged Shambhunath ap</small>
                         </td>
                         <td class="align-middle text-center">
                             <div data-peity="{&quot;fill&quot;: [&quot;green&quot;, &quot;#ddd&quot;], &quot;radius&quot;: 10}"
@@ -333,19 +327,19 @@
                         </td>
                         <td>
                             <p class="m-0">18-FEB-17</p>
-                            <p class="app2">4.3 years</p>
+                            <small class="">4.3 years</small>
                         </td>
                         <td>
                             <p class="m-0">18-JUN-17</p>
-                            <p class="app2">NA</p>
+                            <small class="">NA</small>
                         </td>
                         <td>
                             <p class="m-0">03-DEC-23</p>
-                            <p class="app2">2.5 years</p>
+                            <small class="">2.5 years</small>
                         </td>
                         <td>
                             <p class="m-0 text-danger">14-MAY-17</p>
-                            <p class="app2">4.1 years ago</p>
+                            <small class="">4.1 years ago</small>
                         </td>
                         <td>
                             <div class="dropdown">
