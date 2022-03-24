@@ -7,13 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <!-- link my css files  -->
-    <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/bootstrap4.min.css?20220238"
+    <!-- <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/bootstrap4.min.css?20220238"
+        type="text/css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> -->
+
+
+    <!-- add css files from uCertify Origin  -->
+    <link rel="canonical" href="https://www.ucertify.com/utils/?util=icomoon" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.ucertify.com/favicon.ico">
+    <link rel="stylesheet"
+        href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/main_sass/main.min.css?20220234">
+    <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/bootstrap4.min.css?20220234"
         type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/css_overwrite.min.css?20220234" type="text/css">
+    <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/animate.min.css"
+        type="text/css">
 
     <!-- add javascript for profie name  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -25,168 +37,172 @@
 <body>
 
     <div class="container ">
-        <!-- first row  -->
-        <ul class="nav pt-3">
+        <!-- #region top navigation bar -->
+        <ul class="nav nav-pills pt-3 mb-3">
             <li class="nav-item nav-link text-secondary">
-                <span class="icomoon-my-library-24px-1  s3 align-top"></span>
-                <!-- <span class="ml float-right d-none d-lg-inline-block">My Library</span> -->
-                <span class="ml float-right">My Library</span>
+                <span class="icomoon-my-library-24px-1  s3 align-top font-weight-bold"></span>
+                <span class="ml float-right font-weight-bold">My Library</span>
             </li>
             <li class="nav-item nav-link text-secondary">
-                <span class="icomoon-stack-plus align-top s3"></span>
-                <!-- <span class="ml float-right d-none d-lg-inline-block">Enroll</span> -->
-                <span class="ml float-right ">Enroll</span>
+                <span class="icomoon-stack-plus align-top s3 font-weight-bold"></span>
+                <span class="ml float-right font-weight-bold">Enroll</span>
             </li>
             <li class="nav-item nav-link text-secondary">
-                <span class="icomoon-new-24px-envelop-2 s3 align-top top2 position-relative"></span>
-                <!-- <span class="ml float-right d-none d-lg-inline-block">Inbox</span> -->
-                <span class="ml float-right ">Inbox</span>
+                <span class="icomoon-new-24px-envelop-2 s3 align-top top2 position-relative font-weight-bold"></span>
+                <span class="ml float-right font-weight-bold">Inbox</span>
             </li>
             <li class="nav-item nav-link text-secondary">
-                <span class="icomoon-my-profile-24px-1 s3 align-top"></span>
-                <!-- <span class="ml float-right d-none d-lg-inline-block">My Profile</span> -->
-                <span class="ml float-right ">My Profile</span>
+                <span class="icomoon-my-profile-24px-1 s3 align-top font-weight-bold"></span>
+                <span class="ml float-right font-weight-bold">My Profile</span>
             </li>
-            <li class="nav-item nav-link text-secondary border-bottom border-primary border-2">
-                <span class="icomoon-admin-24px-1 s3 align-top"></span>
-                <!-- <span class="ml float-right d-none d-lg-inline-block">Admin</span> -->
-                <span class="ml float-right ">Admin</span>
+            <li class="nav-item text-secondary ">
+                <a href="#" class="nav-link active ">
+                    <span class="icomoon-admin-24px-1 s3 align-top font-weight-bold text-secondary"></span>
+                    <span class="ml float-right font-weight-bold text-secondary">Admin</span>
+                </a>
             </li>
         </ul>
+        <!-- #endregion  -->
 
-        <!-- horizontal rule  -->
-        <hr class="mt-0">
-
-        <!-- second row  -->
+        <!-- #region main header  -->
         <div class="row mb-3">
-            <!-- first dropdown  -->
+
+            <!-- #region uCertify dropdown  -->
             <div class="col-md-2">
                 <div class="dropdown">
-                    <div class="btn btn-light border border-2  d-flex justify-content-between align-items-center">
+                    <div class="btn border border-2 d-flex justify-content-between align-items-center text-secondary">
                         <span>uCertify</span>
-                        <span class="icomoon-close-2 dropdown-toggle"></span>
+                        <span>
+                            <span class="icomoon-close-2 p-1"></span>
+                            <span class="dropdown-toggle"></span>
+                        </span>
                     </div>
                 </div>
             </div>
+            <!-- #endregion -->
 
-            <!-- second box  -->
+            <!-- #region top header middle part  -->
             <div class="col-md-5">
-                <div class="btn-group">
-                    <div class="bg-secondary text-light btn btn-light border border-2 blue_border">
+                <div class="btn-group ">
+                    <div class="btn alert-dark border border-2 blue_border">
                         <span class=" s3 icomoon-roster-sm position-relative top3"></span>
                         <span class="d-none d-md-inline-block ">Roster</span>
                     </div>
-                    <div class="  btn btn-light border border-2 blue_border">
-                        <span class="btn btn-light icomoon-24px-project-management p-0"></span>
+                    <div class="btn  border border-2 blue_border">
+                        <span class="btn icomoon-24px-project-management p-0"></span>
                         <span class="d-none d-md-inline-block  dropdown-toggle p-0">Manage </span>
                     </div>
-                    <div class=" btn btn-light border border-2 blue_border">
-                        <span class="btn btn-light icomoon-reports-sm p-0"></span>
+                    <div class="btn  border border-2 blue_border">
+                        <span class="btn icomoon-reports-sm p-0"></span>
                         <span class="d-none d-md-inline-block  dropdown-toggle p-0">Report </span>
                     </div>
-                    <div class="  btn btn-light border border-2  blue_border">
+                    <div class="btn  border border-2 blue_border">
                         <span class="s3 icomoon-add-license-enroll-sm position-relative top2 p-0"></span>
                         <span class="d-none d-md-inline-block p-0">Enroll</span>
                     </div>
                 </div>
             </div>
+            <!-- #endregion -->
 
-            <!-- third box  -->
+            <!-- #region top header last part  -->
             <div class="col-md-5 ">
-
                 <div class="row d-flex justify-content-end">
-                    <div class="col-4 p-0">
-                        <button type="button" class="btn btn-outline-primary  " style="height: 40px;">LMS
-                            Configuration</button>
+                    <div class="col-md-4 p-0">
+                        <button type="button" class="btn btn-outline-primary">LMS Configuration</button>
                     </div>
+                    <div
+                        class="col-md-3 border border-2 border-primary d-flex justify-content-between align-items-center">
+                        <span class="icomoon-file-download p-1"></span>
+                        <span class="">Export</span>
+                        <span class="dropdown-toggle"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion -->
 
-                    <div class="col-3 p-0 m-0">
-                        <div class="dropdown ">
-                            <button class="btn btn-light border border-2 dropdown-toggle icomoon-file-download"
-                                type="button" style="height: 40px;">
-                                Export
-                            </button>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region secondary header -->
+        <div class="row ml">
+            <!-- #region search button  -->
+            <div
+                class="rounded px-3 alert-dark d-flex justify-content-center align-items-center border border-secondary">
+                <h4 class="icomoon-search-3 p-0 m-0"></h4>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region secondary header middle part  -->
+            <div class="col-md-9">
+                <div class="btn-group ">
+                    <div class="btn alert-dark border border-2 blue_border">
+                        <span class=" s3 icomoon-roster-sm position-relative top3"></span>
+                        <span class="d-none d-md-inline-block ">Roster</span>
+                    </div>
+                    <div class=" btn btn-light ">
+                        <span class="btn  icomoon-lesson-sm p-0 "></span>
+                        <span class="d-none d-md-inline-block ">Lessons</span>
+                    </div>
+                    <div class="  btn btn-light ">
+                        <span class="btn  icomoon-testprep-or-practice-test p-0 "></span>
+                        <span class="d-none d-md-inline-block ">Practice</span>
+                    </div>
+                    <div class=" btn btn-light border border-2 blue_border">
+                        <span class="btn icomoon-cogs p-0 "></span>
+                        <span class="d-none d-md-inline-block  dropdown-toggle ">Prepengine </span>
+                    </div>
+                    <div class="  btn btn-light border border-2 blue_border">
+                        <span class="s3 icomoon-bars p-0 "></span>
+                        <span class="d-none d-md-inline-block ">Analystics</span>
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region last part with toggle button  -->
+            <div class="col-md-2 p-0 m-0 d-flex flex-row-reverse align-items-center">
+                <div class="row m-0">
+                    <span class="px-2">Test Mode Only</span>
+                    <div>
+                        <!-- Default switch -->
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitches">
+                            <label class="custom-control-label" for="customSwitches"></label>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- #endregion -->
         </div>
+        <!-- #endregion -->
 
-        <!-- third row -->
-        <div class="row ml">
-
-            <div class="col-md-1 border border-secondary rounded btn-light justify-content-center align-items-center d-flex bg-secondary text-light"
-                style="width: 50px; height: 44px;">
-                <span class="icomoon-search-3"></span>
-            </div>
-
-            <div class="col-md-8 mb-3">
-                <div class="btn-group ">
-                    <div class="bg-secondary text-light btn btn-light border border-2 blue_border ">
-                        <span class="align-middle s3 icomoon-roster-sm position-relative top3"></span>
-                        <span class="d-none d-md-inline-block align-middle">Roster</span>
-                    </div>
-                    <div class=" btn btn-light border border-2 blue_border">
-                        <span class="btn btn-light icomoon-lesson-sm p-0 align-middle"></span>
-                        <span class="d-none d-md-inline-block align-middle">Lessons</span>
-                    </div>
-                    <div class="  btn btn-light border border-2 blue_border">
-                        <span class="btn btn-light icomoon-testprep-or-practice-test p-0 align-middle"></span>
-                        <span class="d-none d-md-inline-block align-middle">Practice</span>
-                    </div>
-                    <div class=" btn btn-light border border-2 blue_border">
-                        <span class="btn btn-light icomoon-cogs p-0 align-middle"></span>
-                        <span class="d-none d-md-inline-block  dropdown-toggle align-middle">Prepengine </span>
-                    </div>
-                    <div class="  btn btn-light border border-2 blue_border">
-                        <span class="s3 icomoon-bars p-0 align-middle"></span>
-                        <span class="d-none d-md-inline-block align-middle">Analystics</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 align-items-center justify-content-end d-flex p-0" style="height: 46px;">
-                <div class="row">
-                    <div class="col-11 p-0 m-0 align-items-center text-center d-flex">
-                        <p class="m-0 p-0">Test Mode Only</p>
-                    </div>
-                    <div class="col-1 p-0 m-0">
-                        <h4 class="bi-toggle2-off m-0 p-0"></h4>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <!-- table  -->
+        <!-- #region table  -->
         <div class="row">
-            <table class="table   mt-5 ">
-                <thead>
-                    <tr class="text-center align-middle bg-primary p-2" style="--bs-bg-opacity: .5;">
-                        <th scope="col" class="d-flex pt-4 pb-4 border border-0">
-                            <div class="form-check p-0">
-                                <input class="form-check-input bg-transparent p-0 m-0" type="checkbox"
-                                    style="height: 27px;width: 18px;">
-                            </div>
-                            <div class="btn btn-light p-0 m-0" style="height: 27px; width: 18px;">
-                                <em class="bi-chevron-down"></em>
-                            </div>
-                        </th>
+            <table class="table mt-3">
 
+                <!-- #region table head  -->
+                <thead>
+                    <tr class="text-center align-middle">
+                        
+                        <th scope="col" class="py-4 d-flex justify-content-center align-items-center">
+                            <input type="checkbox" name="" id="" class="p-0 m-0" style="height: 27px;width: 18px;">
+                            <button class="btn bg-white border-blue  p-0 m btn-sm" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-chevron-down  m" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </th>
                         <th scope="col">
                             <p class="m-0">Student Name</p>
                             <small class="m-0 ">Tag/Status</small>
                             <span class="m-0 icomoon-arrow-up-2"></span>
-
                         </th>
-                        <th scope="col">
+                        <th scope="col" >
                             <p class="m-0">Course Name</p>
                             <small class="m-0">CRN/Course Status</small>
                             <span class="m-0 icomoon-arrow-up-2"></span>
-
                         </th>
                         <th scope="col">
                             <p class="m-0">Instructor</p>
@@ -220,31 +236,33 @@
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
+                <!-- #endregion -->
+
                 <tbody>
                     <!-- first row  -->
-                    <tr class="text-center align-middle opacity-50">
-                        <th scope="row" class="d-flex p-0 pt-4 pb-5 border-bottom">
-                            <span class="form-check m ">
-                                <input class="form-check-input" type="checkbox">
-                            </span>
-                            <span class="relative top-0 p-0 m-0">1</span>
-                        </th>
+                    <tr class="text-center align-middle bg-light " style="opacity: 0.5;">
+                        <td class=" py-5 d-flex justify-content-center align-items-center">
+                            <input type="checkbox" name="" id="" class=" p-0 m-0" style="height: 27px;width: 18px;">
+                            <button class="btn  p-0 m  " type="button">
+                                1
+                            </button>
+                        </td>
 
-                        <td class="pb-4 pt-4 border-bottom">
+                        <td class="pb-4 pt-4 align-middle text-center">
                             <img class="rounded-circle" src="./Images/dp.jpeg" width="35px" alt="display picture">
-                            <span class="d-inline-block text-truncate p" style="max-width: 119px;">
+                            <span class="d-inline-block text-truncate " style="max-width: 119px;">
                                 Abhishek Kumar
                             </span>
                         </td>
 
-                        <td class="border-bottom">
+                        <td class="align-middle text-center">
                             <p class="m-0">APP-Training</p>
                             <small class=" m-0">app-training</small><br>
                             <span class="icomoon-lesson-sm text-success"></span>
                             <span class=" icomoon-testprep-sm text-success"></span>
                         </td>
-                        <td>
-                            <p class="m-0">Dhiroo Verma</p>
+                        <td class="align-middle text-center">
+                            <p class="m-0 p-0">Dhiroo Verma</p>
                             <small class="bg-primary p text-light">new</small>
                         </td>
                         <td class="align-middle text-center">
@@ -258,23 +276,23 @@
                             </svg>
                             <div class="small text-navy">58%</div>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0">24-APR-19</p>
                             <small class="">2.1 years</small>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0">25-JUN-19</p>
                             <small class="">NA</small>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0">12-JAN-23</p>
                             <small class="">1.6 years</small>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0 text-danger">21-FEB-19</p>
                             <small class="">2.3 years ago</small>
                         </td>
-                        <td>
+                        <td  class="align-middle text-center">
                             <div class="dropdown">
                                 <button
                                     class="text-dark btn btn-light btn-outline-primary icomoon-24px-settings dropdown-toggle"
@@ -285,31 +303,33 @@
                     </tr>
 
                     <!-- second row  -->
-                    <tr class="text-center align-middle">
-                        <th scope="row" class=" m-0 pt-5">
-                            <span class="form-check m-0 p-0 d-inline ">
-                                <input class="form-check-input m-0 p-0" type="checkbox">
-                            </span>
-                            <span class=" p-0 m-0">2</span>
-                        </th>
+                    <tr class="">
+                        
+                        <td class=" py-5 d-flex justify-content-center align-items-center ">
+                            <input type="checkbox" name="" id="" class=" p-0 m-0" style="height: 27px;width: 18px;">
+                            <button class="btn bg-white  p-0 m  " type="button">
+                                2
+                            </button>
+                        </td>
 
-                        <td class="pb-5 pt-5 flex flex-row">
+                        <td class="pb-5 pt-5 ">
                             <span
-                                class="rounded-circle bg-success text-light d-flex justify-content-center align-items-center"
-                                id="profileImage" style="width: 35px; height: 35px;"></span>
-                            <span class="d-inline-block text-truncate p" style="max-width: 119px;">
-                                <span id="firstName">Abhishek</span>
+                                class="rounded-circle bg-success text-light p-2"
+                                id="profileImage" style="width: 35px; height: 35px;">
+                            </span>
+                            <span class="d-inline-block text-truncate " style="max-width: 100px;">
+                                <span id="firstName" class="">Abhishek</span>
                                 <span id="lastName">Pandit</span>
                             </span>
                         </td>
 
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0">APP-Training</p>
-                            <small class=" m-0">app-training</small>
+                            <small class=" m-0">app-training</small><br>
                             <span class="icomoon-lesson-sm text-success"></span>
                             <span class=" icomoon-testprep-sm text-success"></span>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0">Swati Kesarwani</p>
                             <small class=" bg-primary p text-light">Merged Shambhunath ap</small>
                         </td>
@@ -325,23 +345,23 @@
                             </svg>
                             <div class="small text-navy">64%</div>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0">18-FEB-17</p>
                             <small class="">4.3 years</small>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0">18-JUN-17</p>
                             <small class="">NA</small>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0">03-DEC-23</p>
                             <small class="">2.5 years</small>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <p class="m-0 text-danger">14-MAY-17</p>
                             <small class="">4.1 years ago</small>
                         </td>
-                        <td>
+                        <td class="align-middle text-center">
                             <div class="dropdown">
                                 <button
                                     class="text-dark btn btn-light btn-outline-primary icomoon-24px-settings dropdown-toggle"
@@ -353,6 +373,7 @@
                 </tbody>
             </table>
         </div>
+        <!-- #endregion -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
