@@ -32,25 +32,25 @@
         <!-- #region top navigation bar -->
         <ul class="nav nav-pills pt-3  px-0">
             <li class="nav-item nav-link text-secondary">
-                <span class="icomoon-my-library-24px-1  s3 align-top font-weight-bold"></span>
-                <span class="ml float-right">My Library</span>
+                <span class="icomoon-my-library-24px-1  s3 align-top "></span>
+                <span class="ml float-right d-none d-sm-block">My Library</span>
             </li>
             <li class="nav-item nav-link text-secondary">
-                <span class="icomoon-stack-plus align-top s3 font-weight-bold"></span>
-                <span class="ml float-right">Enroll</span>
+                <span class="icomoon-stack-plus align-top s3 "></span>
+                <span class="ml float-right d-none d-sm-block">Enroll</span>
             </li>
             <li class="nav-item nav-link text-secondary">
-                <span class="icomoon-new-24px-envelop-2 s3 align-top top2 position-relative font-weight-bold"></span>
-                <span class="ml float-right">Inbox</span>
+                <span class="icomoon-new-24px-envelop-2 s3 align-top top2 position-relative "></span>
+                <span class="ml float-right d-none d-sm-block">Inbox</span>
             </li>
             <li class="nav-item nav-link text-secondary">
-                <span class="icomoon-my-profile-24px-1 s3 align-top font-weight-bold"></span>
-                <span class="ml float-right">My Profile</span>
+                <span class="icomoon-my-profile-24px-1 s3 align-top "></span>
+                <span class="ml float-right d-none d-sm-block">My Profile</span>
             </li>
             <li class="nav-item text-secondary ">
                 <a href="#" class="nav-link active ">
-                    <span class="icomoon-admin-24px-1 s3 align-top font-weight-bold text-secondary"></span>
-                    <span class="ml float-right text-secondary">Admin</span>
+                    <span class="icomoon-admin-24px-1 s3 align-top  text-secondary"></span>
+                    <span class="ml float-right text-secondary  d-sm-block">Admin</span>
                 </a>
             </li>
         </ul>
@@ -97,17 +97,15 @@
             <!-- #endregion -->
 
             <!-- #region top header last part  -->
-            <div class="col-md-5 ">
-                <div class="row d-flex justify-content-end">
-                    <div class="col-md-4 p-0">
-                        <button type="button" class="btn btn-outline-primary">LMS Configuration</button>
-                    </div>
-                    <div
-                        class="col-md-3 border border-2 rounded border-primary d-flex justify-content-between align-items-center">
-                        <span class="icomoon-file-download p-1"></span>
-                        <span class="">Export</span>
-                        <span class="dropdown-toggle"></span>
-                    </div>
+            <div class="d-flex mt-3  justify-content-start justify-content-lg-end col p-0">
+                <div class=" p-0 pr-2">
+                    <button type="button" class="btn btn-outline-primary text-nowrap">LMS
+                        Configuration</button>
+                </div>
+                <div class=" border border-2 rounded border-primary d-flex align-items-center px-2">
+                    <span class="icomoon-file-download p-1"></span>
+                    <span class="d-none d-sm-block">Export</span>
+                    <span class="dropdown-toggle px-2"></span>
                 </div>
             </div>
             <!-- #endregion -->
@@ -161,21 +159,16 @@
                 <!-- #region table head  -->
                 <thead>
                     <tr class=" align-middle">
-                        
-                        <th scope="col" class="py-4 d-flex justify-content-center align-items-center">
-                            <input type="checkbox" name="" id="" class="p-0 m-0 " style="height: 27px;width: 18px;">
-
-                            <button class="btn bg-white border-blue  p-0 m btn-sm" type="button">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                                    class="bi bi-chevron-down  m" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                </svg>
-
-                            </button>
+                        <th class="width50">
+                            <label class="custom_checkbox_new pl-4">
+                                <span class="btn border-blue-color bg-white p-0 height20">
+                                    <span class="icomoon-arrow-down-2 m-0"></span>
+                                </span>
+                                <input type="checkbox">
+                                <span class="check_mark_custom mt-1"></span>
+                            </label>
                         </th>
-                        <th scope="col p-0 ">
+                        <th>
                             <p class="m-0">Student Name</p>
                             <small class="m-0 ">Tag/Status</small>
                             <span class="m-0 icomoon-arrow-up-2"></span>
@@ -220,22 +213,21 @@
                 <!-- #endregion -->
 
                 <tbody>
-                    <!-- first row  -->
+                    <!-- #region first row  -->
                     <tr class=" align-middle bg-light" style="opacity: 0.5;">
-                        <td class=" py-5 d-flex justify-content-center align-items-center">
-                            <input type="checkbox" name="" id="" class=" p-0 m-0" style="height: 27px;width: 18px;">
-                            <button class="btn  p-0 m  " type="button">
-                                1
-                            </button>
+                        <td class="align-middle">
+                            <label class="custom_checkbox_new pl-4 d-flex">
+                                <small>1</small>
+                                <input type="checkbox">
+                                <span class="check_mark_custom"></span>
+                            </label>
                         </td>
 
-                        <td class=" align-middle text-center p-0">
-                            <img class="rounded-circle" src="./Images/dp.jpeg" width="35px" alt="display picture">
-                            <span class="d-inline-block text-truncate align-middle" style="max-width: 110px;">
-                                Abhishek Kumar
-                            </span>
+                        <td class="align-middle text-center d-flex align-items-center">
+                            <img alt="User" src="./Images/dp.jpeg" width="40" height="40"
+                                class="rounded-circle img-thumbnail">
+                            <span class="ml-1 text-truncate width100">Abishek Kumar</span>
                         </td>
-
                         <td class="align-middle ">
                             <p class="m-0">APP-Training</p>
                             <small class=" m-0">app-training</small><br>
@@ -296,11 +288,9 @@
                         </td>
 
                         <td class=" align-middle text-center">
-                            <span
-                                class="rounded-circle bg-success text-light p-2"
-                                id="profileImage" style="width: 35px; height: 35px;">
+                            <span class="rounded-circle bg-success text-light p-2" id="profileImage">
                             </span>
-                            <span class="d-inline-block text-truncate align-middle" style="max-width: 110px;">
+                            <span class="d-inline-block text-truncate align-middle width106 pt-2">
                                 <span id="firstName" class="">Abhishek</span>
                                 <span id="lastName">Pandit</span>
                             </span>
