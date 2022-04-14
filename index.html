@@ -28,9 +28,9 @@
 
 <body>
 
-    <div class="container ">
+    <div class="container px-0">
         <!-- #region top navigation bar -->
-        <ul class="nav nav-pills pt-3 mb-3">
+        <ul class="nav nav-pills pt-3  px-0">
             <li class="nav-item nav-link text-secondary">
                 <span class="icomoon-my-library-24px-1  s3 align-top font-weight-bold"></span>
                 <span class="ml float-right">My Library</span>
@@ -57,10 +57,10 @@
         <!-- #endregion  -->
 
         <!-- #region main header  -->
-        <div class="row mb-3">
+        <div class=" row px-3 ">
 
             <!-- #region uCertify dropdown  -->
-            <div class="col-md-2">
+            <div class=" p-0 mr-2 mt-3 col-12 col-sm-3 col-sm-2">
                 <div class="dropdown">
                     <div class="btn border border-2 d-flex justify-content-between align-items-center text-secondary">
                         <span>uCertify</span>
@@ -74,23 +74,23 @@
             <!-- #endregion -->
 
             <!-- #region top header middle part  -->
-            <div class="col-md-5">
-                <div class="btn-group ">
-                    <div class="btn alert-dark border border-2 blue_border">
+            <div class="col-12 col-sm-auto mt-3 p-0">
+                <div class="btn-group col p-0">
+                    <div class="btn alert-dark border border-2 blue_border d-flex justify-content-center">
                         <span class=" s3 icomoon-roster-sm position-relative top3"></span>
-                        <span class="d-none d-md-inline-block ">Roster</span>
+                        <span class=" d-sm-inline-block d-none">Roster</span>
                     </div>
-                    <div class="btn  border border-2 blue_border">
+                    <div class="btn  border border-2 blue_border d-flex justify-content-center">
                         <span class="btn icomoon-24px-project-management p-0"></span>
-                        <span class="d-none d-md-inline-block  dropdown-toggle p-0">Manage </span>
+                        <span class="d-none d-sm-inline-block  dropdown-toggle">Manage </span>
                     </div>
-                    <div class="btn  border border-2 blue_border">
-                        <span class="btn icomoon-reports-sm p-0"></span>
-                        <span class="d-none d-md-inline-block  dropdown-toggle p-0">Report </span>
+                    <div class="btn  border border-2 blue_border d-flex align-middle justify-content-center">
+                        <span class="btn icomoon-reports-sm p-0 pt-1"></span>
+                        <span class="d-none d-sm-inline-block  dropdown-toggle p-0">Report </span>
                     </div>
-                    <div class="btn  border border-2 blue_border">
+                    <div class="btn  border border-2 blue_border d-flex justify-content-center">
                         <span class="s3 icomoon-add-license-enroll-sm position-relative top2 p-0"></span>
-                        <span class="d-none d-md-inline-block p-0">Enroll</span>
+                        <span class="d-none d-sm-inline-block p-0">Enroll</span>
                     </div>
                 </div>
             </div>
@@ -111,65 +111,51 @@
                 </div>
             </div>
             <!-- #endregion -->
-
         </div>
         <!-- #endregion -->
 
-        <!-- #region secondary header -->
-        <div class="row ml">
-            <!-- #region search button  -->
-            <div
-                class="rounded px-3 alert-dark d-flex justify-content-center align-items-center border border-secondary">
-                <h4 class="icomoon-search-3 p-0 m-0"></h4>
-            </div>
-            <!-- #endregion -->
-
-            <!-- #region secondary header middle part  -->
-            <div class="col-md-9">
-                <div class="btn-group ">
-                    <div class="btn alert-dark border border-2 blue_border">
-                        <span class=" s3 icomoon-roster-sm position-relative top3"></span>
-                        <span class="d-none d-md-inline-block ">Roster</span>
-                    </div>
-                    <div class=" btn btn-light ">
-                        <span class="btn  icomoon-lesson-sm p-0 "></span>
-                        <span class="d-none d-md-inline-block ">Lessons</span>
-                    </div>
-                    <div class="  btn btn-light ">
-                        <span class="btn  icomoon-testprep-or-practice-test p-0 "></span>
-                        <span class="d-none d-md-inline-block ">Practice</span>
-                    </div>
-                    <div class=" btn btn-light border border-2 blue_border">
-                        <span class="btn icomoon-cogs p-0 "></span>
-                        <span class="d-none d-md-inline-block  dropdown-toggle ">Prepengine </span>
-                    </div>
-                    <div class="  btn btn-light border border-2 blue_border">
-                        <span class="s3 icomoon-bars p-0 "></span>
-                        <span class="d-none d-md-inline-block ">Analystics</span>
-                    </div>
+        <div class="row mt-3">
+            <div class="d-flex col-12 col-md-6 mb-sm-3 mb-md-0">
+                <div class="col-auto p-0 pr-3">
+                    <button aria-label="search" type="button" id="search_btn" name="search_btn" class="btn border alert-dark">
+                        <em class="icomoon-search-3 s3"></em>
+                    </button>
+                </div>
+                <div class="btn-group col mb-3 mb-sm-0 px-0" role="group" aria-label="Button group">
+                    <button type="button" id="roster_two" name="roster_two" class="btn active custom_btn btn-light d-flex align-items-center justify-content-center">
+                        <span class="icomoon-roster-sm s3 pr-lg-1" rel="tooltip" title="Roster"></span>
+                        <span class="d-lg-inline-block d-none">Roster</span>
+                    </button>
+                    <button type="button" id="lesson" name="lesson" class="btn custom_btn btn-light d-flex align-items-center justify-content-center">
+                        <span class="icomoon-lesson-sm s3 pr-lg-1" rel="tooltip" title="Lesson"></span>
+                        <span class="d-lg-inline-block d-none">Lessons</span>
+                    </button>
+                    <button type="button" id="practice" name="practice" class="btn custom_btn btn-light d-flex align-items-center justify-content-center">
+                        <span class="icomoon-testprep-or-practice-test s3 pr-lg-1" rel="tooltip" title="Practice"></span>
+                        <span class="d-lg-inline-block d-none">Practice</span>
+                    </button>
+                    <button type="button" id="prepengine" name="prepengine" class="btn px-2 btn-light dropdown-toggle">
+                        <span class="icomoon-cogs s3 align-middle position-relative" rel="tooltip" title="Prepengine"></span>
+                        <span class="d-lg-inline-block d-none">Prepengine</span>
+                    </button>
+                    <button type="button" id="analytics" name="analytics" class="btn px-2 btn-light dropdown-toggle">
+                        <span class="icomoon-bars s3 align-middle position-relative" rel="tooltip" title="Analytics"></span>
+                        <span class="d-lg-inline-block d-none">Analytics</span>
+                    </button>
                 </div>
             </div>
-            <!-- #endregion -->
-
-            <!-- #region last part with toggle button  -->
-            <div class="col-md-2 p-0 m-0 d-flex flex-row-reverse align-items-center">
-                <div class="row m-0">
-                    <span class="px-2">Test Mode Only</span>
-                    <div>
-                        <!-- Default switch -->
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="customSwitches">
-                            <label class="custom-control-label" for="customSwitches"></label>
-                        </div>
-                    </div>
+            <div class="d-flex justify-content-md-end align-items-center col mb-sm-3 mb-md-0">
+                <label class="m-0 mx-2" for="test_switch">Test Mode Only</label>
+                <div class="custom-control custom-switch position-relative">
+                    <input type="checkbox" class="custom-control-input" name="test_switch" id="test_switch">
+                    <span class="custom-control-label"></span>
                 </div>
             </div>
-            <!-- #endregion -->
         </div>
         <!-- #endregion -->
 
         <!-- #region table  -->
-        <div class="row">
+        <div class="row px-3 table-responsive">
             <table class="table mt-3">
 
                 <!-- #region table head  -->
@@ -194,7 +180,7 @@
                             <small class="m-0 ">Tag/Status</small>
                             <span class="m-0 icomoon-arrow-up-2"></span>
                         </th>
-                        <th scope="col" >
+                        <th>
                             <p class="m-0">Course Name</p>
                             <small class="m-0">CRN/Course Status</small>
                             <span class="m-0 icomoon-arrow-up-2"></span>
@@ -260,15 +246,15 @@
                             <p class="m-0 p-0">Dhiroo Verma</p>
                             <small class="bg-primary  text-light">new</small>
                         </td>
-                        <td class="align-middle text-center">
-                            <div data-peity="{&quot;fill&quot;: [&quot;green&quot;, &quot;#ddd&quot;], &quot;radius&quot;: 10}"
-                                class="pie d-none">96/100</div><svg class="peity" height="20" width="20">
-                                <path d="M 10 0 A 10 10 0 1 1 7.5131011283514475 0.314168388713691 L 10 10"
-                                    fill="green"></path>
-                                <path
-                                    d="M 7.5131011283514475 0.314168388713691 A 10 10 0 0 1 9.999999999999998 0 L 10 10"
-                                    fill="#ddd"></path>
-                            </svg>
+                        <td class="align-middle text-center align_items_center">
+                            <div class="pl-3">
+                                <svg height="50" width="50" class="" viewBox="0 0 40 40">
+                                    <circle r="10" cx="10" cy="10" fill="lightgrey" />
+                                    <circle r="5" cx="10" cy="10" fill="transparent" stroke="green" stroke-width="10"
+                                        stroke-dasharray="calc(56 * 31.4 / 100) 31.4"
+                                        transform="rotate(-90) translate(-20)" />
+                                </svg>
+                            </div>
                             <div class="small text-navy">58%</div>
                         </td>
                         <td class="align-middle ">
@@ -287,7 +273,7 @@
                             <p class="m-0 text-danger">21-FEB-19</p>
                             <small class="">2.3 years ago</small>
                         </td>
-                        <td  class="align-middle text-center">
+                        <td class="align-middle text-center">
                             <div class="dropdown">
                                 <button
                                     class="text-dark btn p-2 btn-outline-primary icomoon-24px-settings dropdown-toggle"
@@ -296,15 +282,17 @@
                             </div>
                         </td>
                     </tr>
+                    <!-- #endregion -->
 
-                    <!-- second row  -->
+                    <!-- #region second row  -->
                     <tr class="">
-                        
-                        <td class=" py-5 d-flex justify-content-center align-items-center ">
-                            <input type="checkbox" name="" id="" class=" p-0 m-0" style="height: 27px;width: 18px;">
-                            <button class="btn bg-white  p-0 m  " type="button">
-                                2
-                            </button>
+
+                        <td class="align-middle">
+                            <label class="custom_checkbox_new pl-4 d-flex">
+                                <small>2</small>
+                                <input type="checkbox">
+                                <span class="check_mark_custom"></span>
+                            </label>
                         </td>
 
                         <td class=" align-middle text-center">
@@ -329,15 +317,14 @@
                             <small class=" bg-primary  text-light">Merged Shambhunath ap</small>
                         </td>
                         <td class="align-middle text-center">
-                            <div data-peity="{&quot;fill&quot;: [&quot;green&quot;, &quot;#ddd&quot;], &quot;radius&quot;: 10}"
-                                class="pie" style="display: none;">96/100</div><svg class="peity" height="20"
-                                width="20">
-                                <path d="M 10 0 A 10 10 0 1 1 7.5131011283514475 0.314168388713691 L 10 10"
-                                    fill="green"></path>
-                                <path
-                                    d="M 7.5131011283514475 0.314168388713691 A 10 10 0 0 1 9.999999999999998 0 L 10 10"
-                                    fill="#ddd"></path>
-                            </svg>
+                            <div class="pl-3">
+                                <svg height="50" width="50" viewBox="0 0 40 40">
+                                    <circle r="10" cx="10" cy="10" fill="lightgrey" />
+                                    <circle r="5" cx="10" cy="10" fill="transparent" stroke="green" stroke-width="10"
+                                        stroke-dasharray="calc(64 * 31.4 / 100) 31.4"
+                                        transform="rotate(-90) translate(-20)" />
+                                </svg>
+                            </div>
                             <div class="small text-navy">64%</div>
                         </td>
                         <td class="align-middle ">
@@ -365,10 +352,12 @@
                             </div>
                         </td>
                     </tr>
+                    <!-- #endregion -->
                 </tbody>
             </table>
         </div>
         <!-- #endregion -->
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
